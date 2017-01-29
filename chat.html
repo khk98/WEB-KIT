@@ -3,103 +3,33 @@
     <head>
         <title>snappy</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
 
-        <link rel="stylesheet" href="<link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
 <div class="member-area">
 
     <div class="user-info">
-    K.Hitesh Kaushik
+    <span id="username"></span>
     <span class="logout">Logout</span>
     </div>
-    <div class="members">
-      <div class="member">
-        Walter White
-      </div>
-
-      <div class="member">
-        Jessy
-      </div>
-
-      <div class="member active">
-        Tyrion Lanister
-      </div>
-            <div class="member">
-              John Snow
-            </div>
-
-                  <div class="member">
-                    Khaleesi
-                  </div>
-
+    <div class="members" id="members">
 
 </div>
 <div class="message-area">
   <div class="chat-info">
-    Tyrion Lanister
+    Tammu
 </div>
-<div class="messages">
-  <div class="message">
-    Hello
-  </div>
-
-  <div class="message by-user" >
-    Bro!!
-  </div>
-  <div class="message">
-    How r u man long time?
-  </div>
-
-  <div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div>
-  <div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div><div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div><div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div><div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div>
-  <div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div><div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div><div class="message by-user">
-      I am done
-  </div>
-  <div class="message ">
-      What?
-  </div>
+<div class="messages" id="messages">
+</div>
   <div class="chat-form">
-  <input type="text" class="chat-message"
+<input type="hidden" id="chat-id"/>
+  <input id="message-text" type="text" class="chat-message"
   placeholder="Write your message and press enter..."
   />
+  <button id="send-button">Send</button>
   </div>
   <div class="parent">
     <div class="child">
@@ -109,6 +39,21 @@
 </div>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB8VwS8r3IQpogkVxDPzyNfGhuq5CWWlpQ",
+    authDomain: "snappy-1a2c0.firebaseapp.com",
+    databaseURL: "https://snappy-1a2c0.firebaseio.com",
+    storageBucket: "snappy-1a2c0.appspot.com",
+    messagingSenderId: "383545535877"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="chat.js"></script>
 
     </body>
   </html>

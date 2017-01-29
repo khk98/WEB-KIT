@@ -3,22 +3,36 @@
     <head>
         <title>snappy</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
 
-        <link rel="stylesheet" href="<link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="style.css"/>
     </head>
   <body class="homepage">
     <div class="main">
       <h1 class="logo">Snappy</h1>
       <p class="tagline">
-      An instatnt chat app
+      An instant chat app
     </p>
-    <button class="button">Sign in with google</button>
+    <button id="signin-button" class="button">Sign in with google</button>
 
 </div>
 
-  <div class="main-content">
-</div>
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB8VwS8r3IQpogkVxDPzyNfGhuq5CWWlpQ",
+    authDomain: "snappy-1a2c0.firebaseapp.com",
+    databaseURL: "https://snappy-1a2c0.firebaseio.com",
+    storageBucket: "snappy-1a2c0.appspot.com",
+    messagingSenderId: "383545535877"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="chat.js"></script>
+
   </body>
 </html>
